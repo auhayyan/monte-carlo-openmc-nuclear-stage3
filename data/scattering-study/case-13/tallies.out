@@ -1,0 +1,21 @@
+ =====================>     TALLY 1: TRANSMISSION     <=====================
+
+ Surface 3
+   Total Material
+     Current                              0.147761 +/- 0.000381829
+ ===============>     TALLY 2: UNCOLLIDED_TRANSMISSION     <================
+
+ Surface 3
+   Collision Number 0
+     Total Material
+       Current                              0.0498 +/- 0.000218262
+ ==================>     TALLY 3: REFLECTION_SIGNED     <===================
+
+ Surface 1
+   Total Material
+     Current                              -0.280597 +/- 0.000425701
+ ======================>     TALLY 4: ABSORPTION     <======================
+
+ Cell 2
+   Total Material
+     Absorption Rate                      0.571642 +/- 0.000495842

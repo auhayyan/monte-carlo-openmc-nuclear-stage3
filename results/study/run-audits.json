@@ -1,0 +1,1712 @@
+[
+  {
+    "case": "case-01",
+    "configuration": {
+      "thickness_cm": 0.25,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110501,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.7788007830714049,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.25,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110501,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.7788007830714049,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.8598770000000002,
+      "transmission_standard_error": 0.0003297499971168987,
+      "uncollided_transmission": 0.7791210000000006,
+      "uncollided_transmission_standard_error": 0.00038321156167314777,
+      "scattered_transmission": 0.0807559999999996,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.08220599999999999,
+      "reflection_standard_error": 0.00027975393228027044,
+      "absorption": 0.057916999999999975,
+      "absorption_standard_error": 0.00023266595033326923,
+      "particle_balance": 1.0000000000000002,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.8356139548546878,
+      "review_needed": false,
+      "elapsed_seconds": 0.9266666109999999,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "6fe95ce0eb2ac8ac179c7065dd0431d5cb90939224921ae605ac5a462ebf96ce"
+      },
+      "statepoint_sha256": "9d6142dcb80c8a3a0c2c57189f6837f16fa6409c4b5c413b7f0a7fbe8fb840e6",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-01",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-01\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.8598770000000002,
+          "standard_error": 0.0003297499971168987,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.7791210000000006,
+          "standard_error": 0.00038321156167314777,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.08220599999999999,
+          "standard_error": 0.00027975393228027044,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.057916999999999975,
+          "standard_error": 0.00023266595033326923,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0000000000000002,
+      "uncollided_reference": 0.7788007830714049,
+      "standardized_uncollided_residual": 0.8356139548546878,
+      "scattered_transmission_mean": 0.0807559999999996,
+      "scattered_share_of_exit_transmission": 0.09391575771883605,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-02",
+    "configuration": {
+      "thickness_cm": 0.25,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110502,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.7788007830714049,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.25,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110502,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.7788007830714049,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.8591909999999998,
+      "transmission_standard_error": 0.0003723827047397784,
+      "uncollided_transmission": 0.7790090000000004,
+      "uncollided_transmission_standard_error": 0.0004551880397250351,
+      "scattered_transmission": 0.08018199999999942,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.08235799999999997,
+      "reflection_standard_error": 0.0002967200496744696,
+      "absorption": 0.05845100000000001,
+      "absorption_standard_error": 0.00023677332210489619,
+      "particle_balance": 0.9999999999999998,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.4574305790663886,
+      "review_needed": false,
+      "elapsed_seconds": 0.9052705010000004,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "3c6d777c17c6fa88fb613a4d1576eeebc7dc2e90bef7ec2f2df3d7e3e043c698"
+      },
+      "statepoint_sha256": "01c2fe1583f60a9e0bf86059d6142081335eb437f33525fc8cbaa64e8a22cb10",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-02",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-02\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.8591909999999998,
+          "standard_error": 0.0003723827047397784,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.7790090000000004,
+          "standard_error": 0.0004551880397250351,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.08235799999999997,
+          "standard_error": 0.0002967200496744696,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.05845100000000001,
+          "standard_error": 0.00023677332210489619,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999998,
+      "uncollided_reference": 0.7788007830714049,
+      "standardized_uncollided_residual": 0.4574305790663886,
+      "scattered_transmission_mean": 0.08018199999999942,
+      "scattered_share_of_exit_transmission": 0.0933226721415837,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-03",
+    "configuration": {
+      "thickness_cm": 0.25,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110503,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.7788007830714049,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.25,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110503,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.7788007830714049,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.8589009999999998,
+      "transmission_standard_error": 0.00032512777597395857,
+      "uncollided_transmission": 0.7781180000000002,
+      "uncollided_transmission_standard_error": 0.0003813039297839041,
+      "scattered_transmission": 0.0807829999999996,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.08277699999999998,
+      "reflection_standard_error": 0.0002766825661733673,
+      "absorption": 0.05832200000000001,
+      "absorption_standard_error": 0.00025029509856093913,
+      "particle_balance": 0.9999999999999998,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": -1.7906531196561044,
+      "review_needed": false,
+      "elapsed_seconds": 0.9048513660000008,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "e2c89acc4dec19412e8bd4e2bc5cbf923eb71bb1ca6a52647121620315c7d232"
+      },
+      "statepoint_sha256": "26aac5bdfa5863d4cc37680195f2dda6e0441653eaad3f776b253b345bacd83d",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-03",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-03\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.8589009999999998,
+          "standard_error": 0.00032512777597395857,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.7781180000000002,
+          "standard_error": 0.0003813039297839041,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.08277699999999998,
+          "standard_error": 0.0002766825661733673,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.05832200000000001,
+          "standard_error": 0.00025029509856093913,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999998,
+      "uncollided_reference": 0.7788007830714049,
+      "standardized_uncollided_residual": -1.7906531196561044,
+      "scattered_transmission_mean": 0.0807829999999996,
+      "scattered_share_of_exit_transmission": 0.09405391308194963,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-04",
+    "configuration": {
+      "thickness_cm": 0.5,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110504,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.6065306597126334,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.5,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110504,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.6065306597126334,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.7382309999999996,
+      "transmission_standard_error": 0.00048328776170268026,
+      "uncollided_transmission": 0.6068719999999999,
+      "uncollided_transmission_standard_error": 0.0005087915570132817,
+      "scattered_transmission": 0.13135899999999978,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.14000800000000008,
+      "reflection_standard_error": 0.000355379097626925,
+      "absorption": 0.121761,
+      "absorption_standard_error": 0.000371232985189865,
+      "particle_balance": 0.9999999999999998,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.6708843389032912,
+      "review_needed": false,
+      "elapsed_seconds": 0.8959548700000006,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "ca59d02786ff68600ae33a6d68151e788cba9043989e06ab937cbf8b19708726"
+      },
+      "statepoint_sha256": "230a23af4878a5c61804274c2ad55f34966a361f7fbdcb0825bfbc5bc7e4cc65",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-04",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-04\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.7382309999999996,
+          "standard_error": 0.00048328776170268026,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.6068719999999999,
+          "standard_error": 0.0005087915570132817,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.14000800000000008,
+          "standard_error": 0.000355379097626925,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.121761,
+          "standard_error": 0.000371232985189865,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999998,
+      "uncollided_reference": 0.6065306597126334,
+      "standardized_uncollided_residual": 0.6708843389032912,
+      "scattered_transmission_mean": 0.13135899999999978,
+      "scattered_share_of_exit_transmission": 0.17793752903901333,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-05",
+    "configuration": {
+      "thickness_cm": 0.5,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110505,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.6065306597126334,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.5,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110505,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.6065306597126334,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.7373679999999999,
+      "transmission_standard_error": 0.0004078048652012257,
+      "uncollided_transmission": 0.6057910000000002,
+      "uncollided_transmission_standard_error": 0.000497874461883869,
+      "scattered_transmission": 0.13157699999999972,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.13986699999999996,
+      "reflection_standard_error": 0.00033565872218356904,
+      "absorption": 0.12276500000000003,
+      "absorption_standard_error": 0.0002932209667697731,
+      "particle_balance": 0.9999999999999999,
+      "balance_absolute_error": 1.1102230246251565e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": -1.4856349727891087,
+      "review_needed": false,
+      "elapsed_seconds": 1.052152636999999,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "802a6d8e0efb34def7d65bbd5672c4f29bd05fd4be5d4bf04961ce4de237ad6e"
+      },
+      "statepoint_sha256": "2aca16f829bc884c48a7b4ccab732c5e2d80feb441318fdc94e1dfd8ed6d86dc",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-05",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-05\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.7373679999999999,
+          "standard_error": 0.0004078048652012257,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.6057910000000002,
+          "standard_error": 0.000497874461883869,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.13986699999999996,
+          "standard_error": 0.00033565872218356904,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.12276500000000003,
+          "standard_error": 0.0002932209667697731,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999999,
+      "uncollided_reference": 0.6065306597126334,
+      "standardized_uncollided_residual": -1.4856349727891087,
+      "scattered_transmission_mean": 0.13157699999999972,
+      "scattered_share_of_exit_transmission": 0.1784414295168759,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-06",
+    "configuration": {
+      "thickness_cm": 0.5,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110506,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.6065306597126334,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 0.5,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110506,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.6065306597126334,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.7376450000000001,
+      "transmission_standard_error": 0.0004604529500266756,
+      "uncollided_transmission": 0.6067060000000001,
+      "uncollided_transmission_standard_error": 0.00043251862807955945,
+      "scattered_transmission": 0.13093900000000003,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.13981100000000002,
+      "reflection_standard_error": 0.00038021231442489617,
+      "absorption": 0.12254399999999999,
+      "absorption_standard_error": 0.0003081103042678206,
+      "particle_balance": 1.0,
+      "balance_absolute_error": 0.0,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.4053936084676598,
+      "review_needed": false,
+      "elapsed_seconds": 0.9118312869999983,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "296ec037117bd995b07fc8833b7a5105a5a601e0995ee0a85bda7327edb43683"
+      },
+      "statepoint_sha256": "495c3890064a908bf747dd073ba871469c754232dd163ff150b03aacb81fbed4",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-06",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-06\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.7376450000000001,
+          "standard_error": 0.0004604529500266756,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.6067060000000001,
+          "standard_error": 0.00043251862807955945,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.13981100000000002,
+          "standard_error": 0.00038021231442489617,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.12254399999999999,
+          "standard_error": 0.0003081103042678206,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0,
+      "uncollided_reference": 0.6065306597126334,
+      "standardized_uncollided_residual": 0.4053936084676598,
+      "scattered_transmission_mean": 0.13093900000000003,
+      "scattered_share_of_exit_transmission": 0.17750950660548095,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-07",
+    "configuration": {
+      "thickness_cm": 1.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110507,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.36787944117144233,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 1.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110507,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.36787944117144233,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.5413010000000003,
+      "transmission_standard_error": 0.0005300304832058836,
+      "uncollided_transmission": 0.3673880000000001,
+      "uncollided_transmission_standard_error": 0.0004738117087535831,
+      "scattered_transmission": 0.17391300000000015,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.21055800000000002,
+      "reflection_standard_error": 0.0003703402203216616,
+      "absorption": 0.24814099999999992,
+      "absorption_standard_error": 0.00044946004642655915,
+      "particle_balance": 1.0000000000000002,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": -1.0372077396209223,
+      "review_needed": false,
+      "elapsed_seconds": 1.0515044369999984,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "2b7a5b5bdc7febc4219a25eeaec6395faa184e6914616e8b75a8110de1ac48da"
+      },
+      "statepoint_sha256": "6e76cd1ed25e7f3315caf953c92ebe62e344eb3e018a90837a54dfcb2800c6e2",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-07",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-07\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.5413010000000003,
+          "standard_error": 0.0005300304832058836,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.3673880000000001,
+          "standard_error": 0.0004738117087535831,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.21055800000000002,
+          "standard_error": 0.0003703402203216616,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.24814099999999992,
+          "standard_error": 0.00044946004642655915,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0000000000000002,
+      "uncollided_reference": 0.36787944117144233,
+      "standardized_uncollided_residual": -1.0372077396209223,
+      "scattered_transmission_mean": 0.17391300000000015,
+      "scattered_share_of_exit_transmission": 0.32128704731748153,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-08",
+    "configuration": {
+      "thickness_cm": 1.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110508,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.36787944117144233,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 1.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110508,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.36787944117144233,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.5412290000000002,
+      "transmission_standard_error": 0.000518942777248959,
+      "uncollided_transmission": 0.36780999999999997,
+      "uncollided_transmission_standard_error": 0.0005316802031153558,
+      "scattered_transmission": 0.1734190000000002,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.21074600000000007,
+      "reflection_standard_error": 0.000416537968002675,
+      "absorption": 0.24802499999999988,
+      "absorption_standard_error": 0.00041566637505831847,
+      "particle_balance": 1.0000000000000002,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": -0.13060702850223943,
+      "review_needed": false,
+      "elapsed_seconds": 1.0551079840000028,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "44eef108f9602dcadd0c4715fcaffacf0960bee346e955d36bed734cc0e0447b"
+      },
+      "statepoint_sha256": "0bba9c4f40aa8938e43f9a2d8e5923cdbe139d0b13969917778f6df798bbd8cc",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-08",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-08\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.5412290000000002,
+          "standard_error": 0.000518942777248959,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.36780999999999997,
+          "standard_error": 0.0005316802031153558,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.21074600000000007,
+          "standard_error": 0.000416537968002675,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.24802499999999988,
+          "standard_error": 0.00041566637505831847,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0000000000000002,
+      "uncollided_reference": 0.36787944117144233,
+      "standardized_uncollided_residual": -0.13060702850223943,
+      "scattered_transmission_mean": 0.1734190000000002,
+      "scattered_share_of_exit_transmission": 0.3204170508232193,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-09",
+    "configuration": {
+      "thickness_cm": 1.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110509,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.36787944117144233,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 1.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110509,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.36787944117144233,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.5420839999999999,
+      "transmission_standard_error": 0.0004978331228260658,
+      "uncollided_transmission": 0.36838299999999996,
+      "uncollided_transmission_standard_error": 0.000439967985520857,
+      "scattered_transmission": 0.17370099999999994,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.21059599999999992,
+      "reflection_standard_error": 0.0003793080355847065,
+      "absorption": 0.24731999999999998,
+      "absorption_standard_error": 0.0004522692502784441,
+      "particle_balance": 0.9999999999999998,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 1.1445351596696003,
+      "review_needed": false,
+      "elapsed_seconds": 1.046653831999997,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "204c09e0217fdae674c31aad46d433de2e419d4909c506ee651481d100b1389b"
+      },
+      "statepoint_sha256": "f1805f80aa114fb4128fe32353adf8e9a3444abe92b496a2f24a90874f14b701",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-09",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-09\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.5420839999999999,
+          "standard_error": 0.0004978331228260658,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.36838299999999996,
+          "standard_error": 0.000439967985520857,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.21059599999999992,
+          "standard_error": 0.0003793080355847065,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.24731999999999998,
+          "standard_error": 0.0004522692502784441,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999998,
+      "uncollided_reference": 0.36787944117144233,
+      "standardized_uncollided_residual": 1.1445351596696003,
+      "scattered_transmission_mean": 0.17370099999999994,
+      "scattered_share_of_exit_transmission": 0.3204318887847639,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-10",
+    "configuration": {
+      "thickness_cm": 2.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110510,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.1353352832366127,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 2.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110510,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.1353352832366127,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.2865710000000001,
+      "transmission_standard_error": 0.0004213597397745828,
+      "uncollided_transmission": 0.13535299999999995,
+      "uncollided_transmission_standard_error": 0.00031076788245869443,
+      "scattered_transmission": 0.15121800000000013,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.26547399999999993,
+      "reflection_standard_error": 0.00044027452409381386,
+      "absorption": 0.447955,
+      "absorption_standard_error": 0.0005162889626261885,
+      "particle_balance": 1.0,
+      "balance_absolute_error": 0.0,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.057009634480481026,
+      "review_needed": false,
+      "elapsed_seconds": 1.1609413709999998,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "79307b5d60fae0e649b528dad8015b022cb35387679b388578b2b9652c9f1c92"
+      },
+      "statepoint_sha256": "b90abed486ad595be1d079d7b4e690b78964841ed2415d60a55aa81f91cfb647",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-10",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-10\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.2865710000000001,
+          "standard_error": 0.0004213597397745828,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.13535299999999995,
+          "standard_error": 0.00031076788245869443,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.26547399999999993,
+          "standard_error": 0.00044027452409381386,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.447955,
+          "standard_error": 0.0005162889626261885,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0,
+      "uncollided_reference": 0.1353352832366127,
+      "standardized_uncollided_residual": 0.057009634480481026,
+      "scattered_transmission_mean": 0.15121800000000013,
+      "scattered_share_of_exit_transmission": 0.5276807492733043,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-11",
+    "configuration": {
+      "thickness_cm": 2.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110511,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.1353352832366127,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 2.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110511,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.1353352832366127,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.286967,
+      "transmission_standard_error": 0.00042229305493031254,
+      "uncollided_transmission": 0.13615200000000005,
+      "uncollided_transmission_standard_error": 0.0003545903312699845,
+      "scattered_transmission": 0.15081499999999998,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.264844,
+      "reflection_standard_error": 0.0004774497064845664,
+      "absorption": 0.4481889999999997,
+      "absorption_standard_error": 0.0005206423674174633,
+      "particle_balance": 0.9999999999999998,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 2.303268564775111,
+      "review_needed": false,
+      "elapsed_seconds": 1.200029047000001,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "a71fadb4fbf98d7ccf3589662f7c17c8fe0602352e1ff83326080ab95f76caf4"
+      },
+      "statepoint_sha256": "73c20060f5339dc7eb1d1119eb32feb575dfa29fb308b86e6f57858df355662f",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-11",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-11\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.286967,
+          "standard_error": 0.00042229305493031254,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.13615200000000005,
+          "standard_error": 0.0003545903312699845,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.264844,
+          "standard_error": 0.0004774497064845664,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.4481889999999997,
+          "standard_error": 0.0005206423674174633,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999998,
+      "uncollided_reference": 0.1353352832366127,
+      "standardized_uncollided_residual": 2.303268564775111,
+      "scattered_transmission_mean": 0.15081499999999998,
+      "scattered_share_of_exit_transmission": 0.5255482337690395,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-12",
+    "configuration": {
+      "thickness_cm": 2.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110512,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.1353352832366127,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 2.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110512,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.1353352832366127,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.286167,
+      "transmission_standard_error": 0.0004756007471684049,
+      "uncollided_transmission": 0.13549999999999998,
+      "uncollided_transmission_standard_error": 0.00035050036383798937,
+      "scattered_transmission": 0.15066700000000002,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.26545500000000016,
+      "reflection_standard_error": 0.00043964718407375693,
+      "absorption": 0.4483780000000001,
+      "absorption_standard_error": 0.0004955245766452678,
+      "particle_balance": 1.0000000000000002,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.46994748189024915,
+      "review_needed": false,
+      "elapsed_seconds": 1.1555902420000024,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "e541ef033da454796665c23377b6721e3a6dcb899956ccb662e6bd0a69bec1e1"
+      },
+      "statepoint_sha256": "d359b041d7f70a1fa6246cf7b933f60a272bd5069160dd054c5b3a7b5a0c8f86",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-12",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-12\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.286167,
+          "standard_error": 0.0004756007471684049,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.13549999999999998,
+          "standard_error": 0.00035050036383798937,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.26545500000000016,
+          "standard_error": 0.00043964718407375693,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.4483780000000001,
+          "standard_error": 0.0004955245766452678,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0000000000000002,
+      "uncollided_reference": 0.1353352832366127,
+      "standardized_uncollided_residual": 0.46994748189024915,
+      "scattered_transmission_mean": 0.15066700000000002,
+      "scattered_share_of_exit_transmission": 0.5265002603374953,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-13",
+    "configuration": {
+      "thickness_cm": 3.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110513,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.049787068367863944,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 3.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110513,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.049787068367863944,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.14776100000000003,
+      "transmission_standard_error": 0.0003818294478855336,
+      "uncollided_transmission": 0.04979999999999998,
+      "uncollided_transmission_standard_error": 0.00021826219058371747,
+      "scattered_transmission": 0.09796100000000005,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.280597,
+      "reflection_standard_error": 0.00042570074138079816,
+      "absorption": 0.5716419999999999,
+      "absorption_standard_error": 0.0004958416576857519,
+      "particle_balance": 0.9999999999999999,
+      "balance_absolute_error": 1.1102230246251565e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.059248155172705465,
+      "review_needed": false,
+      "elapsed_seconds": 1.2303572679999988,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "8f72490a96bcb8081cd8ad3ac2e7ba4894f38a94f64a2f3aa1a096c32fc29816"
+      },
+      "statepoint_sha256": "74fe621b746d64dfd8b61c95672b1f83c093931fa19a55c369986a9f515f0837",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-13",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-13\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.14776100000000003,
+          "standard_error": 0.0003818294478855336,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.04979999999999998,
+          "standard_error": 0.00021826219058371747,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.280597,
+          "standard_error": 0.00042570074138079816,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.5716419999999999,
+          "standard_error": 0.0004958416576857519,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 0.9999999999999999,
+      "uncollided_reference": 0.049787068367863944,
+      "standardized_uncollided_residual": 0.059248155172705465,
+      "scattered_transmission_mean": 0.09796100000000005,
+      "scattered_share_of_exit_transmission": 0.6629692544040716,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-14",
+    "configuration": {
+      "thickness_cm": 3.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110514,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.049787068367863944,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 3.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110514,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.049787068367863944,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.14773699999999995,
+      "transmission_standard_error": 0.0003162298582241336,
+      "uncollided_transmission": 0.04995800000000001,
+      "uncollided_transmission_standard_error": 0.0002278541975771601,
+      "scattered_transmission": 0.09777899999999995,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.28105800000000003,
+      "reflection_standard_error": 0.000519417272557053,
+      "absorption": 0.571205,
+      "absorption_standard_error": 0.0004917015909527152,
+      "particle_balance": 1.0,
+      "balance_absolute_error": 0.0,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": 0.750179869204213,
+      "review_needed": false,
+      "elapsed_seconds": 1.194176450999997,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "980288b3695c4014a30e78e7fe79a70ee9756b00101ad22011587580b492d6b4"
+      },
+      "statepoint_sha256": "c73361011c1df1e5e72d9554b88ffda1f738c61dd37fd734ff5bbd734b2117bc",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-14",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-14\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.14773699999999995,
+          "standard_error": 0.0003162298582241336,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.04995800000000001,
+          "standard_error": 0.0002278541975771601,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.28105800000000003,
+          "standard_error": 0.000519417272557053,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.571205,
+          "standard_error": 0.0004917015909527152,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0,
+      "uncollided_reference": 0.049787068367863944,
+      "standardized_uncollided_residual": 0.750179869204213,
+      "scattered_transmission_mean": 0.09777899999999995,
+      "scattered_share_of_exit_transmission": 0.6618450354345897,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  },
+  {
+    "case": "case-15",
+    "configuration": {
+      "thickness_cm": 3.0,
+      "sigma_t_per_cm": 1.0,
+      "sigma_a_per_cm": 0.19999999999999996,
+      "sigma_s_per_cm": 0.8,
+      "scatter_ratio": 0.8,
+      "temperature_K": 294.0,
+      "incident_energy_eV": 1000000.0,
+      "batches": 100,
+      "particles_per_batch": 10000,
+      "histories": 1000000,
+      "seed": 2026110515,
+      "threads": 2,
+      "analytical_transmission": null,
+      "analytical_uncollided_transmission": 0.049787068367863944,
+      "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+      "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+    },
+    "recorded_results": {
+      "status": "transport_completed",
+      "configuration": {
+        "thickness_cm": 3.0,
+        "sigma_t_per_cm": 1.0,
+        "sigma_a_per_cm": 0.19999999999999996,
+        "sigma_s_per_cm": 0.8,
+        "scatter_ratio": 0.8,
+        "temperature_K": 294.0,
+        "incident_energy_eV": 1000000.0,
+        "batches": 100,
+        "particles_per_batch": 10000,
+        "histories": 1000000,
+        "seed": 2026110515,
+        "threads": 2,
+        "analytical_transmission": null,
+        "analytical_uncollided_transmission": 0.049787068367863944,
+        "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+        "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+      },
+      "transmission": 0.14743000000000003,
+      "transmission_standard_error": 0.00037384569819708823,
+      "uncollided_transmission": 0.04965300000000001,
+      "uncollided_transmission_standard_error": 0.00023670061642964765,
+      "scattered_transmission": 0.09777700000000003,
+      "scattered_transmission_standard_error": null,
+      "reflection": 0.2804630000000001,
+      "reflection_standard_error": 0.0004414682916415877,
+      "absorption": 0.5721070000000001,
+      "absorption_standard_error": 0.000495888662559186,
+      "particle_balance": 1.0000000000000002,
+      "balance_absolute_error": 2.220446049250313e-16,
+      "standardized_transmission_residual": null,
+      "standardized_uncollided_residual": -0.5664048107951707,
+      "review_needed": false,
+      "elapsed_seconds": 1.1627148480000002,
+      "openmc_python_version": "0.16.0",
+      "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+      "numpy_version": "2.5.4",
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+      "benchmark_source_sha256": "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+      "statepoint_filename": "statepoint.100.h5",
+      "input_sha256": {
+        "mgxs.h5": "9cef595bc0b404cecf43780da0247f769e49a2d010c2686f6873e549c6a0ec38",
+        "model.xml": "06fcefe483cf480837f066923e23b6cc72860b8991058e25e8d55ef7b1480c0c"
+      },
+      "statepoint_sha256": "c4a216d72ebb75ad3d83b1f9e3502fc556a3f1cea29b11319064ef6ba135d834",
+      "limitations": "An ideal one-group model, not a water/graphite calculation or experimental validation. Scattering is isotropic with no resolved energy loss. The exponential reference applies only to zero-collision transmission. Standard errors are OpenMC batch estimates, not 95% confidence limits. Total and uncollided currents are correlated; no uncertainty is assigned to their difference by assuming independence. A residual beyond three standard errors needs investigation, not selective rerunning."
+    },
+    "audit": {
+      "status": "original_inputs_and_statepoint_checked",
+      "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-15",
+      "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\scattering-study\\case-15\\benchmark_source.py",
+      "uncollided_tally_direct": true,
+      "hashes_match": true,
+      "serialized_filter_references_valid": true,
+      "actual_cross_sections_per_cm": {
+        "total": 1.0,
+        "absorption": 0.19999999999999996,
+        "scattering": 0.8
+      },
+      "actual_histories": 1000000,
+      "tallies_reconstructed_from_statepoint": {
+        "transmission": {
+          "mean": 0.14743000000000003,
+          "standard_error": 0.00037384569819708823,
+          "realizations": 100
+        },
+        "uncollided_transmission": {
+          "mean": 0.04965300000000001,
+          "standard_error": 0.00023670061642964765,
+          "realizations": 100
+        },
+        "reflection_signed": {
+          "mean": -0.2804630000000001,
+          "standard_error": 0.0004414682916415877,
+          "realizations": 100
+        },
+        "absorption": {
+          "mean": 0.5721070000000001,
+          "standard_error": 0.000495888662559186,
+          "realizations": 100
+        }
+      },
+      "particle_balance": 1.0000000000000002,
+      "uncollided_reference": 0.049787068367863944,
+      "standardized_uncollided_residual": -0.5664048107951707,
+      "scattered_transmission_mean": 0.09777700000000003,
+      "scattered_share_of_exit_transmission": 0.6632096588211355,
+      "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+    }
+  }
+]

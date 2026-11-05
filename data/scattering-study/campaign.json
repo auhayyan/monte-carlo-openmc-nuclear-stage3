@@ -1,0 +1,23 @@
+﻿{
+    "status":  "completed",
+    "started_utc":  "2026-11-05T05:26:33.5679011Z",
+    "image":  "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+    "sigma_t_per_cm":  1,
+    "scatter_ratio":  0.8,
+    "thicknesses_cm":  [
+                           0.25,
+                           0.5,
+                           1,
+                           2,
+                           3
+                       ],
+    "repetitions_per_thickness":  3,
+    "batches":  100,
+    "particles_per_batch":  10000,
+    "threads":  2,
+    "first_seed":  2026110501,
+    "benchmark_sha256":  "98dc90f8c0a2b0e3dabbf09262bb795f871afae6f460c370d9261a1e60346fd0",
+    "launcher_sha256":  "ada3c31755667e4b01157e36431a2d0f1159cd693c8adcf4114e42981795b9bf",
+    "completed_utc":  "2026-11-05T05:27:18.2483450Z",
+    "completed_cases":  15
+}

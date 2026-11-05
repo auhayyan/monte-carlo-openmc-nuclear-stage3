@@ -1,0 +1,632 @@
+[
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-1",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.7791859999999997,
+        "standard_error": 0.000409241772412344,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.220814,
+        "standard_error": 0.00040924177240712033,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.7791859999999997,
+        "standard_error": 0.000409241772412344,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 0.9999999999999998,
+    "uncollided_reference": 0.7788007830714049,
+    "standardized_uncollided_residual": 0.9412942533312475,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-2",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.779503,
+        "standard_error": 0.00037618890322740905,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.22049700000000008,
+        "standard_error": 0.0003761889032241486,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.779503,
+        "standard_error": 0.00037618890322740905,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0,
+    "uncollided_reference": 0.7788007830714049,
+    "standardized_uncollided_residual": 1.8666604000559048,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-3",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.778684,
+        "standard_error": 0.0004053922405354264,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.22131600000000007,
+        "standard_error": 0.00040539224053577215,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.778684,
+        "standard_error": 0.0004053922405354264,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0,
+    "uncollided_reference": 0.7788007830714049,
+    "standardized_uncollided_residual": -0.28807426420050153,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-4",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.6065079999999999,
+        "standard_error": 0.0005266238571039329,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.39349199999999995,
+        "standard_error": 0.0005266238571020696,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.6065079999999999,
+        "standard_error": 0.0005266238571039329,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 0.9999999999999999,
+    "uncollided_reference": 0.6065306597126334,
+    "standardized_uncollided_residual": -0.04302826833197599,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-5",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.6070460000000001,
+        "standard_error": 0.0005333795813274355,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.3929539999999998,
+        "standard_error": 0.0005333795813292751,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.6070460000000001,
+        "standard_error": 0.0005333795813274355,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 0.9999999999999999,
+    "uncollided_reference": 0.6065306597126334,
+    "standardized_uncollided_residual": 0.9661792565889392,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-6",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.6058980000000002,
+        "standard_error": 0.00043732192335304995,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.394102,
+        "standard_error": 0.0004373219233549732,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.6058980000000002,
+        "standard_error": 0.00043732192335304995,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0000000000000002,
+    "uncollided_reference": 0.6065306597126334,
+    "standardized_uncollided_residual": -1.4466681838918911,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-7",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.36833900000000014,
+        "standard_error": 0.0005167514984117911,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.6316609999999998,
+        "standard_error": 0.0005167514984142325,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.36833900000000014,
+        "standard_error": 0.0005167514984117911,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0,
+    "uncollided_reference": 0.36787944117144233,
+    "standardized_uncollided_residual": 0.8893226821213576,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-8",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.36719,
+        "standard_error": 0.00048262016350495606,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.6328099999999999,
+        "standard_error": 0.00048262016350931287,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.36719,
+        "standard_error": 0.00048262016350495606,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 0.9999999999999999,
+    "uncollided_reference": 0.36787944117144233,
+    "standardized_uncollided_residual": -1.42853785145518,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-9",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.3671289999999999,
+        "standard_error": 0.0005441596152498027,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.6328710000000001,
+        "standard_error": 0.0005441596152490299,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.3671289999999999,
+        "standard_error": 0.0005441596152498027,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0,
+    "uncollided_reference": 0.36787944117144233,
+    "standardized_uncollided_residual": -1.3790828102851913,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-10",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.1348830000000001,
+        "standard_error": 0.0003052902411033748,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.8651170000000004,
+        "standard_error": 0.0003052902410950524,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.1348830000000001,
+        "standard_error": 0.0003052902411033748,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0000000000000004,
+    "uncollided_reference": 0.1353352832366127,
+    "standardized_uncollided_residual": -1.481486060536956,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-11",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.13531700000000002,
+        "standard_error": 0.00035904771636413254,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.8646829999999995,
+        "standard_error": 0.00035904771637852934,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.13531700000000002,
+        "standard_error": 0.00035904771636413254,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 0.9999999999999996,
+    "uncollided_reference": 0.1353352832366127,
+    "standardized_uncollided_residual": -0.050921467480215234,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-12",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.135127,
+        "standard_error": 0.00033185994064069874,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.8648730000000002,
+        "standard_error": 0.0003318599406344682,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.135127,
+        "standard_error": 0.00033185994064069874,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0000000000000002,
+    "uncollided_reference": 0.1353352832366127,
+    "standardized_uncollided_residual": -0.6276239193274951,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-13",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.049773,
+        "standard_error": 0.00020817560089524806,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.9502270000000003,
+        "standard_error": 0.00020817560088507383,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.049773,
+        "standard_error": 0.00020817560089524806,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0000000000000002,
+    "uncollided_reference": 0.049787068367863944,
+    "standardized_uncollided_residual": -0.06757933111972007,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-14",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.049742000000000015,
+        "standard_error": 0.0002241850786625755,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.9502579999999999,
+        "standard_error": 0.00022418507866743125,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.049742000000000015,
+        "standard_error": 0.0002241850786625755,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0,
+    "uncollided_reference": 0.049787068367863944,
+    "standardized_uncollided_residual": -0.20103196935672157,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  },
+  {
+    "status": "original_inputs_and_statepoint_checked",
+    "run_folder": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\case-15",
+    "source_file_checked": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\data\\absorber-study\\original_source.py",
+    "uncollided_tally_direct": false,
+    "hashes_match": true,
+    "serialized_filter_references_valid": true,
+    "actual_cross_sections_per_cm": {
+      "total": 1.0,
+      "absorption": 1.0,
+      "scattering": 0.0
+    },
+    "actual_histories": 1000000,
+    "tallies_reconstructed_from_statepoint": {
+      "transmission": {
+        "mean": 0.04973500000000002,
+        "standard_error": 0.00023013116593659282,
+        "realizations": 100
+      },
+      "reflection_signed": {
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "realizations": 100
+      },
+      "absorption": {
+        "mean": 0.9502650000000001,
+        "standard_error": 0.00023013116594016196,
+        "realizations": 100
+      },
+      "uncollided_transmission": {
+        "mean": 0.04973500000000002,
+        "standard_error": 0.00023013116593659282,
+        "realizations": 100
+      }
+    },
+    "particle_balance": 1.0000000000000002,
+    "uncollided_reference": 0.049787068367863944,
+    "standardized_uncollided_residual": -0.2262551777896455,
+    "scattered_transmission_mean": 0.0,
+    "scattered_share_of_exit_transmission": 0.0,
+    "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+  }
+]

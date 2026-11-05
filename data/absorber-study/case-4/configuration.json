@@ -1,0 +1,15 @@
+{
+  "thickness_cm": 0.5,
+  "sigma_t_per_cm": 1.0,
+  "sigma_a_per_cm": 1.0,
+  "sigma_s_per_cm": 0.0,
+  "temperature_K": 294.0,
+  "incident_energy_eV": 1000000.0,
+  "batches": 100,
+  "particles_per_batch": 10000,
+  "histories": 1000000,
+  "seed": 2026110404,
+  "threads": 2,
+  "analytical_transmission": 0.6065306597126334,
+  "observable": "Exit current per source neutron; total and zero-collision transmission coincide in this purely absorbing model."
+}

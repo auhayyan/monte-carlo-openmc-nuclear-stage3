@@ -1,0 +1,14 @@
+{
+  "analysis_sha256": "b20a0ea315bb7d44a3c40e216de832215e77b9e78f2e633fb371980b36439a7c",
+  "absorber_audits_sha256": "dfe2935e7b3bf44a9baa28cf3b3b36a304022f80e2d3cdaa98ca049a9f0e57ca",
+  "plot_source_sha256": "5fd3c16fbf8741accadc19208470f3e14e2d8c32665c56fc6a6a939aad82d060",
+  "matplotlib_version": "3.11.2",
+  "figures_sha256": {
+    "particle_fates.png": "764c56eedbd3bd72aa20ebd6d10e9d0cb11e692b2ce23bc4ca04ff10316468d4",
+    "particle_fates.svg": "ef76be10e785e9f47597398284a039b2c5506e2a2f2c7b880deb986465da9ebd",
+    "reference_residuals.png": "dfd22abb1c699203700fe895581500e20cdfea7a3aab75c853ffe5ebb1528a37",
+    "reference_residuals.svg": "5ab01f5b4b18a39d585620d40b01af9d795fc6f20ade44ca089a6ae6b9946103",
+    "transmission_comparison.png": "ea1c0ef794b09e67910c8b0fda5290627d8bfc62fd94a15d82b0857186f85e1d",
+    "transmission_comparison.svg": "c8e3333bc2a0f6da9f9a1ec0f6c598403656a9ca9693eaa0964a1eeacf6757c8"
+  }
+}

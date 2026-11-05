@@ -1,0 +1,40 @@
+{
+  "status": "original_inputs_and_statepoint_checked",
+  "run_folder": "output\\stage3\\OpenMC-Stage3-scattering\\runs\\scatter-20261105-050846",
+  "hashes_match": true,
+  "serialized_filter_references_valid": true,
+  "actual_cross_sections_per_cm": {
+    "total": 1.0,
+    "absorption": 0.19999999999999996,
+    "scattering": 0.8
+  },
+  "actual_histories": 1000000,
+  "tallies_reconstructed_from_statepoint": {
+    "transmission": {
+      "mean": 0.5408630000000002,
+      "standard_error": 0.000426346127223687,
+      "realizations": 100
+    },
+    "uncollided_transmission": {
+      "mean": 0.36692199999999997,
+      "standard_error": 0.00045183035164412556,
+      "realizations": 100
+    },
+    "reflection_signed": {
+      "mean": -0.21082599999999999,
+      "standard_error": 0.0003813231085727716,
+      "realizations": 100
+    },
+    "absorption": {
+      "mean": 0.24831100000000003,
+      "standard_error": 0.0003995120635084217,
+      "realizations": 100
+    }
+  },
+  "particle_balance": 1.0000000000000002,
+  "uncollided_reference": 0.36787944117144233,
+  "standardized_uncollided_residual": -2.1190280111958293,
+  "scattered_transmission_mean": 0.17394100000000023,
+  "scattered_share_of_exit_transmission": 0.32159900011648085,
+  "limitations": "This checks the saved run's inputs, filters, statistics and bookkeeping. It is not an independent rerun of transport or an experimental validation. No covariance-based uncertainty for the total-minus-uncollided difference is inferred."
+}

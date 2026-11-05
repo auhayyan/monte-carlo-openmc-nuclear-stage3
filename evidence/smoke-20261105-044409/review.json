@@ -1,0 +1,22 @@
+{
+  "status": "single_case_console_output_reviewed",
+  "run_id": "smoke-20261105-044409",
+  "evidence_type": "user-provided console log",
+  "console_sha256": "8293fb006d58e5377c0e72b1ffecbb8c813b0d41a3c8e2ce4df2ba2b469bcb4f",
+  "openmc_version": "0.16.0",
+  "openmc_commit": "617d35a5063c57796b43428bc401e627d2011046",
+  "docker_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+  "transmission_reported": 0.36646,
+  "transmission_standard_error_reported": 0.00116012,
+  "analytical_reference_full_precision": 0.36787944117144233,
+  "absolute_difference": 0.001419441171442326,
+  "absolute_standardized_residual": 1.2235296102492208,
+  "relative_difference_percent": 0.3858441142898295,
+  "particle_balance_reported": 1.0,
+  "batches_observed_in_log": 50,
+  "threads_reported": 2,
+  "mpi_processes_reported": 1,
+  "raw_statepoint_received": false,
+  "raw_results_json_received": false,
+  "interpretation": "The displayed transmission is statistically consistent with the analytical reference for this single ideal absorbing-slab case. The reported particle balance is unity. This supports proceeding to a thickness sweep; it is not experimental validation or validation of scattering or real materials. The console values are rounded, so the standardized residual is approximate. Original binary outputs remain on the user's PC."
+}

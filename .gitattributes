@@ -1,0 +1,17 @@
+*.py text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.ps1 -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.md text eol=lf
+*.tex text eol=lf
+*.txt text eol=lf
+*.svg text eol=lf
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.h5 binary
+*.png binary
+*.pdf binary
+*.log -text -whitespace
+data/** -text -whitespace
+evidence/** -text -whitespace
+results/** -text -whitespace

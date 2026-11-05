@@ -1,0 +1,14 @@
+{
+  "status": "all_saved_production_runs_audited_and_outputs_regenerated",
+  "absorbing_cases": 15,
+  "scattering_cases": 15,
+  "total_production_histories": 30000000,
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "h5py": "3.16.0",
+    "matplotlib": "3.11.2"
+  },
+  "transport_rerun": false,
+  "scope": "The original OpenMC statepoints were checked. The numerical reference, figures, and LaTeX sources were regenerated."
+}

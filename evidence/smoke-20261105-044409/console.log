@@ -1,0 +1,140 @@
+PS C:\Users\auhor\Downloads\OpenMC-Stage3-starter> powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1
+docker.io/openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27: Pulling from openmc/openmc
+Digest: sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27
+Status: Image is up to date for openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27
+docker.io/openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27
+OpenMC version 0.16.0
+Commit hash: 617d35a5063c57796b43428bc401e627d2011046
+Copyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors
+MIT/X license at <https://docs.openmc.org/en/latest/license.html>
+Build type:            RelWithDebInfo
+Compiler ID:           GNU 13.3.0
+MPI enabled:           yes
+Parallel HDF5 enabled: yes
+PNG support:           yes
+DAGMC support:         no
+libMesh support:       no
+Coverage testing:      no
+Profiling flags:       no
+UWUW support:          no
+Strict FP:             no
+0.16.0
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2026 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.16.0
+     Commit Hash | 617d35a5063c57796b43428bc401e627d2011046
+       Date/Time | 2026-11-05 04:44:11
+   MPI Processes | 1
+  OpenMP Threads | 2
+
+ Reading model XML file 'model.xml' ...
+ Reading cross sections HDF5 file...
+ Loading cross section data...
+ Loading ideal_absorber data...
+ Preparing distributed cell instances...
+ Writing summary.h5 file...
+
+ ===============>     FIXED SOURCE TRANSPORT SIMULATION     <===============
+
+ Simulating batch 1
+ Simulating batch 2
+ Simulating batch 3
+ Simulating batch 4
+ Simulating batch 5
+ Simulating batch 6
+ Simulating batch 7
+ Simulating batch 8
+ Simulating batch 9
+ Simulating batch 10
+ Simulating batch 11
+ Simulating batch 12
+ Simulating batch 13
+ Simulating batch 14
+ Simulating batch 15
+ Simulating batch 16
+ Simulating batch 17
+ Simulating batch 18
+ Simulating batch 19
+ Simulating batch 20
+ Simulating batch 21
+ Simulating batch 22
+ Simulating batch 23
+ Simulating batch 24
+ Simulating batch 25
+ Simulating batch 26
+ Simulating batch 27
+ Simulating batch 28
+ Simulating batch 29
+ Simulating batch 30
+ Simulating batch 31
+ Simulating batch 32
+ Simulating batch 33
+ Simulating batch 34
+ Simulating batch 35
+ Simulating batch 36
+ Simulating batch 37
+ Simulating batch 38
+ Simulating batch 39
+ Simulating batch 40
+ Simulating batch 41
+ Simulating batch 42
+ Simulating batch 43
+ Simulating batch 44
+ Simulating batch 45
+ Simulating batch 46
+ Simulating batch 47
+ Simulating batch 48
+ Simulating batch 49
+ Simulating batch 50
+ Creating state point statepoint.50.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     = 2.9070e-02 seconds
+   Reading cross sections          = 7.1995e-03 seconds
+ Total time in simulation          = 6.3275e-02 seconds
+   Time in transport only          = 4.0519e-02 seconds
+   Time in active batches          = 6.3275e-02 seconds
+   Time accumulating tallies       = 9.4299e-05 seconds
+   Time writing statepoints        = 2.1921e-02 seconds
+ Total time for finalization       = 1.4730e-03 seconds
+ Total time elapsed                = 9.3854e-02 seconds
+ Calculation Rate (active)         = 1.58039e+06 particles/second
+
+ ============================>     RESULTS     <============================
+
+ Leakage Fraction            = 0.36646 +/- 0.00116
+
+
+OpenMC transmission: 0.36646000
+Standard error:       0.00116012
+Analytical reference: 0.36787944
+Particle balance:     1.00000000
+Saved actual outputs: /work/runs/smoke-20261105-044409
+Windows results folder: C:\Users\auhor\Downloads\OpenMC-Stage3-starter\runs\smoke-20261105-044409
+PS C:\Users\auhor\Downloads\OpenMC-Stage3-starter>

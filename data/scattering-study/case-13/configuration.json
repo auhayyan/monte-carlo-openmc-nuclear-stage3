@@ -1,0 +1,18 @@
+{
+  "thickness_cm": 3.0,
+  "sigma_t_per_cm": 1.0,
+  "sigma_a_per_cm": 0.19999999999999996,
+  "sigma_s_per_cm": 0.8,
+  "scatter_ratio": 0.8,
+  "temperature_K": 294.0,
+  "incident_energy_eV": 1000000.0,
+  "batches": 100,
+  "particles_per_batch": 10000,
+  "histories": 1000000,
+  "seed": 2026110513,
+  "threads": 2,
+  "analytical_transmission": null,
+  "analytical_uncollided_transmission": 0.049787068367863944,
+  "observable": "Total and zero-collision exit current, entrance leakage, and absorption per source neutron.",
+  "scattering_model": "Isotropic scattering in a single energy group; no energy slowing-down or real-material data."
+}

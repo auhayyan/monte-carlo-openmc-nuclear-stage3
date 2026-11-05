@@ -1,0 +1,41 @@
+{
+  "status": "transport_completed",
+  "configuration": {
+    "thickness_cm": 3.0,
+    "sigma_t_per_cm": 1.0,
+    "sigma_a_per_cm": 1.0,
+    "sigma_s_per_cm": 0.0,
+    "temperature_K": 294.0,
+    "incident_energy_eV": 1000000.0,
+    "batches": 100,
+    "particles_per_batch": 10000,
+    "histories": 1000000,
+    "seed": 2026110414,
+    "threads": 2,
+    "analytical_transmission": 0.049787068367863944,
+    "observable": "Exit current per source neutron; total and zero-collision transmission coincide in this purely absorbing model."
+  },
+  "transmission": 0.049742000000000015,
+  "transmission_standard_error": 0.0002241850786625755,
+  "reflection": -0.0,
+  "absorption": 0.9502579999999999,
+  "particle_balance": 1.0,
+  "balance_absolute_error": 0.0,
+  "standardized_transmission_residual": -0.20103196935672157,
+  "review_needed": false,
+  "elapsed_seconds": 0.755854989999996,
+  "openmc_python_version": "0.16.0",
+  "openmc_executable_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            RelWithDebInfo\nCompiler ID:           GNU 13.3.0\nMPI enabled:           yes\nParallel HDF5 enabled: yes\nPNG support:           yes\nDAGMC support:         no\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no",
+  "numpy_version": "2.5.4",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "container_image": "openmc/openmc@sha256:d3dd6b6629db3d2cfd04b238959a264b2f0e274b5a6f828b443e05b18b9f2b27",
+  "benchmark_source_sha256": "cc331528ef8a3db419c74fb8d32e576e783615b44c7314286c7b47e642915390",
+  "statepoint_filename": "statepoint.100.h5",
+  "input_sha256": {
+    "mgxs.h5": "51fcf19f91c07e411f57357506a9c55ccf49537b48c8276e99029724bcd0cdf0",
+    "model.xml": "7c4b07f0150ae8fb2c397d110af4e3d6f38210a4ed4e367d234254468c8c1850"
+  },
+  "statepoint_sha256": "9d7d80973a088c6208a5c9d1c0e882234e9b62a5ccef4459dcb2e42954d1c7f7",
+  "limitations": "An ideal one-group software verification benchmark, not a water/graphite calculation or experimental validation. Standard errors are OpenMC batch estimates, not 95% confidence limits. A residual beyond three standard errors needs investigation, not selective rerunning."
+}

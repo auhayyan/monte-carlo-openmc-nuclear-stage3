@@ -1,0 +1,18 @@
+{
+  "analysis_sha256": "b20a0ea315bb7d44a3c40e216de832215e77b9e78f2e633fb371980b36439a7c",
+  "template_sha256": "4cb29b558818e1567f5c08d8993b11ede79e56d1e875342593342ff2a399e243",
+  "builder_sha256": "95d1d8aee04be78c7a23d7e7e884a4ded29440b94d4279b72d8c7ed692a69ddd",
+  "latex_helper_sha256": "073f3e54d5e25d6b16d10694d43198e90383b34ce21ca966b4b400a994188151",
+  "latex": {
+    "main": "C:\\Users\\auhor\\OneDrive\\Documents\\ChatGPT\\OpenMC Simulation Progression\\projects\\openmc-stage3-starter\\report\\latex\\main.tex",
+    "main_sha256": "aa3c5d799323afb1c67edef8fd794709ebcd889c8a4f6de98f56cd78b80b11ba",
+    "images_sha256": {
+      "images/transmission_comparison.png": "ea1c0ef794b09e67910c8b0fda5290627d8bfc62fd94a15d82b0857186f85e1d",
+      "images/reference_residuals.png": "dfd22abb1c699203700fe895581500e20cdfea7a3aab75c853ffe5ebb1528a37",
+      "images/particle_fates.png": "764c56eedbd3bd72aa20ebd6d10e9d0cb11e692b2ce23bc4ca04ff10316468d4"
+    }
+  },
+  "manuscript_sha256": "d25e87fc161961e89a4e663caba5699ba7931608c27ada1ab8acbaab767c84c5",
+  "pdf_sha256": "9ce0016ec55fb8364e9e2447050dee563bc1b7e45e3e2c62e0519a4667aa7968",
+  "compiler": "tectonic.exe"
+}

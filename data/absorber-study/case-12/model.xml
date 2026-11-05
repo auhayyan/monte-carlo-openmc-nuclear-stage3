@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <cross_sections>/work/runs/thickness-20261105-045836/case-12/mgxs.h5</cross_sections>
+    <material id="1" name="Ideal purely absorbing material" temperature="294.0">
+      <density value="1.0" units="macro"/>
+      <macroscopic name="ideal_absorber"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" name="Upstream void" material="void" region="1 -2" universe="1"/>
+    <cell id="2" name="Absorber slab" material="1" region="2 -3" universe="1"/>
+    <surface id="1" type="x-plane" boundary="vacuum" coeffs="-1.0"/>
+    <surface id="2" type="x-plane" coeffs="0.0"/>
+    <surface id="3" type="x-plane" boundary="vacuum" coeffs="2.0"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>10000</particles>
+    <batches>100</batches>
+    <source type="independent" strength="1.0" particle="neutron">
+      <space type="point">
+        <parameters>-0.5 0.0 0.0</parameters>
+      </space>
+      <angle type="monodirectional" reference_uvw="1.0 0.0 0.0"/>
+      <energy type="discrete">
+        <parameters>1000000.0 1.0</parameters>
+      </energy>
+    </source>
+    <energy_mode>multi-group</energy_mode>
+    <seed>2026110412</seed>
+    <survival_biasing>false</survival_biasing>
+  </settings>
+  <tallies>
+    <filter id="1" type="surface">
+      <bins>3</bins>
+    </filter>
+    <filter id="2" type="surface">
+      <bins>1</bins>
+    </filter>
+    <filter id="3" type="cell">
+      <bins>2</bins>
+    </filter>
+    <tally id="1" name="transmission">
+      <filters>1</filters>
+      <scores>current</scores>
+    </tally>
+    <tally id="2" name="reflection_signed">
+      <filters>2</filters>
+      <scores>current</scores>
+    </tally>
+    <tally id="3" name="absorption">
+      <filters>3</filters>
+      <scores>absorption</scores>
+      <estimator>analog</estimator>
+    </tally>
+  </tallies>
+</model>

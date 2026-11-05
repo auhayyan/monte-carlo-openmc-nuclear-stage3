@@ -1,0 +1,15 @@
+ =====================>     TALLY 1: TRANSMISSION     <=====================
+
+ Surface 3
+   Total Material
+     Current                              0.779186 +/- 0.000409242
+ ==================>     TALLY 2: REFLECTION_SIGNED     <===================
+
+ Surface 1
+   Total Material
+     Current                              0 +/- 0
+ ======================>     TALLY 3: ABSORPTION     <======================
+
+ Cell 2
+   Total Material
+     Absorption Rate                      0.220814 +/- 0.000409242

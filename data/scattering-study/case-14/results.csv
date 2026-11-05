@@ -1,0 +1,2 @@
+transmission,transmission_standard_error,uncollided_transmission,uncollided_transmission_standard_error,scattered_transmission,reflection,reflection_standard_error,absorption,absorption_standard_error,particle_balance,standardized_uncollided_residual
+0.14773699999999995,0.0003162298582241336,0.04995800000000001,0.0002278541975771601,0.09777899999999995,0.28105800000000003,0.000519417272557053,0.571205,0.0004917015909527152,1.0,0.750179869204213
